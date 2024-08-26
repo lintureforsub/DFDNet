@@ -19,7 +19,7 @@ __Left:__ The overall structure of DFDNet. It contains three parts: spatial enco
 * `main.py` is the executable python file with possible arguments.
 * `core.py` is the core file for model training, validating, and testing. 
 * `WFL.py` contains the implement of weighted frequency loss.
-
+## Preparation
 ### 1. Environment install
 We provide the environment requirements file for easy reproduction:
 ```
