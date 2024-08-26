@@ -53,4 +53,3 @@ python main.py
 ```
 Please note that __the model training must strictly adhere to the hyperparameter settings provided in our paper__; otherwise, reproducibility may not be guaranteed.
 
-## Results：
