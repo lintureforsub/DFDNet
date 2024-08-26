@@ -8,10 +8,10 @@ import torch.fft
 import numpy as np
 
 
-class ThreeDFL(nn.Module):
+class WeightedFL(nn.Module):
 
     def __init__(self, train, T, H, W, log_matrix=True):
-        super(ThreeDFL, self).__init__()
+        super(WeightedFL, self).__init__()
         self.log_matrix = log_matrix
         self.train = train
         mean = [T // 2, H // 2, W // 2]

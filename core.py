@@ -9,7 +9,7 @@ import torch.distributed
 from torch import optim
 import lpips
 from statistics import mean
-from TDFL import ThreeDFL as Lwf
+from WFL import WeightedFL as Lwf
 
 class Exp:
     def __init__(self, args):

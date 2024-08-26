@@ -1,7 +1,7 @@
 # Code Partially references simvp, https://github.com/gaozhangyang/SimVP-Simpler-yet-Better-Video-Prediction, thanks!
 # Code of TemporalModule references involution https://github.com/d-li14/involution, thanks!
 import argparse
-from exp import Exp
+from core import Core
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -45,8 +45,8 @@ def create_parser():
 if __name__ == '__main__':
     args = create_parser().parse_args()
     config = args.__dict__
-    exp = Exp(args)
+    core = Core(args)
     print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>  start <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
-    exp.train(args)
+    core.train(args)
     print('>>>>>>>>>>>>>>>>>>>>>>>>>>>> testing <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
-    # mse = exp.test(args)
+    # mse = core.test(args)
