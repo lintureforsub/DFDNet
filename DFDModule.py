@@ -1,6 +1,4 @@
 from torch import nn
-###BasicConv2d作为ConvSC的子函数
-
 from timm.models.layers import DropPath, trunc_normal_
 import torch
 
@@ -54,7 +52,7 @@ class GroupConv2d(nn.Module):
 
         self.conv2 = nn.Conv2d(in_channels, out_channels, kernel_size=kernel_size, stride=stride, padding=padding,
                                groups=groups)
-        self.norm = nn.GroupNorm(groups, out_channels)  # 第一维度为Channel，后面的维度为特征数据。
+        self.norm = nn.GroupNorm(groups, out_channels)  
         self.activate = nn.LeakyReLU(0.2, inplace=True)
 
     def forward(self, x):
